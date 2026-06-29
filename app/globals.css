@@ -1,0 +1,57 @@
+/* ─── Fonts — must precede @import "tailwindcss" ────────────────────────────── */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap");
+
+@import "tailwindcss";
+
+/* ─── CSS Custom Properties ─────────────────────────────────────────────────── */
+:root {
+  --font-heading: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  --color-bg:          #f9f9fa;
+  --color-surface:     #ffffff;
+  --color-sidebar:     #212130;
+  --color-accent:      #72cc76;
+  --color-accent-light:#d4f0d5;
+  --color-dark:        #212130;
+  --color-text:        #212130;
+  --color-text-muted:  #6b7280;
+  --color-border:      #e5e7eb;
+  --color-border-accent: #72cc76;
+}
+
+/* ─── Base ──────────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
+
+/* ─── Scrollbar ─────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #72cc76; }
+
+/* ─── Utilities ─────────────────────────────────────────────────────────────── */
+.section-anchor { scroll-margin-top: 40px; }
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+}
+
+.card-accent {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-top: 2px solid var(--color-border-accent);
+  border-radius: 12px;
+}
