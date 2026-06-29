@@ -12,8 +12,8 @@ export default function Typography() {
       <div className="grid lg:grid-cols-2 gap-6 mb-20">
         <div className="card p-8">
           <p className="text-[10px] tracking-[0.2em] uppercase text-[#9ca3af] mb-6">Heading Typeface</p>
-          <p className="text-7xl font-medium text-[#212130] leading-none mb-4" style={{ fontFamily: "var(--font-heading)" }}>Ag</p>
-          <p className="font-heading text-2xl font-medium text-[#212130] mb-1">{heading.family}</p>
+          <p className="text-7xl font-medium text-[#0a1024] leading-none mb-4" style={{ fontFamily: "var(--font-heading)" }}>Ag</p>
+          <p className="font-heading text-2xl font-medium text-[#0a1024] mb-1">{heading.family}</p>
           <p className="text-xs text-[#9ca3af] mb-6">{heading.usage}</p>
           <div className="flex flex-wrap gap-2">
             {heading.weights.map((w) => (
@@ -24,8 +24,8 @@ export default function Typography() {
         </div>
         <div className="card p-8">
           <p className="text-[10px] tracking-[0.2em] uppercase text-[#9ca3af] mb-6">Body Typeface</p>
-          <p className="text-7xl font-medium text-[#212130] leading-none mb-4">Ag</p>
-          <p className="text-2xl font-medium text-[#212130] mb-1">{body.family}</p>
+          <p className="text-7xl font-medium text-[#0a1024] leading-none mb-4">Ag</p>
+          <p className="text-2xl font-medium text-[#0a1024] mb-1">{body.family}</p>
           <p className="text-xs text-[#9ca3af] mb-6">{body.usage}</p>
           <div className="flex flex-wrap gap-2">
             {body.weights.map((w) => (
@@ -47,7 +47,7 @@ export default function Typography() {
                 <p className="text-[10px] text-[#d1d5db]">{item.size}</p>
                 <p className="text-[10px] text-[#d1d5db]">/{item.lineHeight}</p>
               </div>
-              <p className="text-[#212130] flex-1 overflow-hidden whitespace-nowrap text-ellipsis"
+              <p className="text-[#0a1024] flex-1 overflow-hidden whitespace-nowrap text-ellipsis"
                 style={{
                   fontFamily: item.family.includes("Plus Jakarta") ? "var(--font-heading)" : "var(--font-body)",
                   fontSize: `clamp(14px, ${parseInt(item.size) * 0.5}px, ${item.size})`,
@@ -65,7 +65,7 @@ export default function Typography() {
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {rules.map((r) => (
           <div key={r.rule} className="card-accent p-5">
-            <p className="font-heading text-sm font-medium text-[#212130] mb-2">{r.rule}</p>
+            <p className="font-heading text-sm font-medium text-[#0a1024] mb-2">{r.rule}</p>
             <p className="text-xs text-[#6b7280] leading-relaxed">{r.desc}</p>
           </div>
         ))}

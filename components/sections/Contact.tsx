@@ -17,24 +17,24 @@ export default function Contact() {
           <div className="card p-8">
             <p className="text-[10px] tracking-[0.2em] uppercase text-[#9ca3af] mb-6">Brand Owner</p>
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-[#d4f0d5] flex items-center justify-center">
-                <div className="w-4 h-4 rounded-full bg-[#72cc76]" />
+              <div className="w-10 h-10 rounded-xl bg-[#eaf2ff] flex items-center justify-center">
+                <div className="w-4 h-4 rounded-full bg-[#1271ff]" />
               </div>
               <div>
-                <p className="text-sm font-medium text-[#212130]">{brand.name}</p>
+                <p className="text-sm font-medium text-[#0a1024]">{brand.name}</p>
                 <p className="text-xs text-[#9ca3af]">Brand enquiries</p>
               </div>
             </div>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
-                <span className="text-[#72cc76] text-xs">@</span>
-                <a href={`mailto:${brand.email}`} className="text-sm text-[#6b7280] hover:text-[#212130] transition-colors">
+                <span className="text-[#1271ff] text-xs">@</span>
+                <a href={`mailto:${brand.email}`} className="text-sm text-[#6b7280] hover:text-[#0a1024] transition-colors">
                   {brand.email}
                 </a>
               </div>
               <div className="flex items-center gap-3">
-                <span className="text-[#72cc76] text-xs">↗</span>
-                <a href={`https://${brand.url}`} target="_blank" rel="noopener noreferrer" className="text-sm text-[#6b7280] hover:text-[#212130] transition-colors">
+                <span className="text-[#1271ff] text-xs">↗</span>
+                <a href={`https://${brand.url}`} target="_blank" rel="noopener noreferrer" className="text-sm text-[#6b7280] hover:text-[#0a1024] transition-colors">
                   {brand.url}
                 </a>
               </div>
@@ -46,23 +46,23 @@ export default function Contact() {
             <p className="text-[10px] tracking-[0.2em] uppercase text-[#9ca3af] mb-6">Creative Team</p>
             <div className="flex items-center gap-4 mb-6">
               <div className="w-10 h-10 rounded-xl bg-[#f9f9fa] border border-[#e5e7eb] flex items-center justify-center">
-                <span className="text-[10px] font-bold text-[#212130]">HC</span>
+                <span className="text-[10px] font-bold text-[#0a1024]">HC</span>
               </div>
               <div>
-                <p className="text-sm font-medium text-[#212130]">Hive Creative Media</p>
+                <p className="text-sm font-medium text-[#0a1024]">Hive Creative Media</p>
                 <p className="text-xs text-[#9ca3af]">Brand design &amp; codex</p>
               </div>
             </div>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
-                <span className="text-[#72cc76] text-xs">@</span>
-                <a href="mailto:hello@hivecreative.media" className="text-sm text-[#6b7280] hover:text-[#212130] transition-colors">
+                <span className="text-[#1271ff] text-xs">@</span>
+                <a href="mailto:hello@hivecreative.media" className="text-sm text-[#6b7280] hover:text-[#0a1024] transition-colors">
                   hello@hivecreative.media
                 </a>
               </div>
               <div className="flex items-center gap-3">
-                <span className="text-[#72cc76] text-xs">↗</span>
-                <a href="https://hivecreative.media" target="_blank" rel="noopener noreferrer" className="text-sm text-[#6b7280] hover:text-[#212130] transition-colors">
+                <span className="text-[#1271ff] text-xs">↗</span>
+                <a href="https://hivecreative.media" target="_blank" rel="noopener noreferrer" className="text-sm text-[#6b7280] hover:text-[#0a1024] transition-colors">
                   hivecreative.media
                 </a>
               </div>
@@ -70,14 +70,14 @@ export default function Contact() {
           </div>
 
           {/* Asset download */}
-          <div className="rounded-xl border border-dashed border-[#72cc76]/40 p-8 text-center">
-            <div className="w-10 h-10 rounded-full bg-[#d4f0d5] flex items-center justify-center mx-auto mb-4">
-              <span className="text-[#72cc76] text-sm">↓</span>
+          <div className="rounded-xl border border-dashed border-[#1271ff]/40 p-8 text-center">
+            <div className="w-10 h-10 rounded-full bg-[#eaf2ff] flex items-center justify-center mx-auto mb-4">
+              <span className="text-[#1271ff] text-sm">↓</span>
             </div>
-            <p className="font-heading text-sm font-medium text-[#212130] mb-2">Brand Asset Pack</p>
+            <p className="font-heading text-sm font-medium text-[#0a1024] mb-2">Brand Asset Pack</p>
             <p className="text-xs text-[#9ca3af] mb-4">Logos, colours, and fonts — all approved files</p>
             <a href={`mailto:${brand.email}?subject=Brand Asset Request`}
-              className="inline-block px-5 py-2.5 rounded-lg border border-[#72cc76] text-[#212130] text-xs hover:bg-[#72cc76]/10 transition-colors">
+              className="inline-block px-5 py-2.5 rounded-lg border border-[#1271ff] text-[#0a1024] text-xs hover:bg-[#1271ff]/10 transition-colors">
               Request assets →
             </a>
           </div>
@@ -103,9 +103,9 @@ export default function Contact() {
               { version: brand.version, date: brand.year, note: "Initial release — core brand system" },
             ].map((v) => (
               <div key={v.version} className="flex items-start gap-4 py-4 border-b border-[#e5e7eb] last:border-0">
-                <span className="text-[10px] text-[#72cc76] font-mono mt-0.5">v{v.version}</span>
+                <span className="text-[10px] text-[#1271ff] font-mono mt-0.5">v{v.version}</span>
                 <div>
-                  <p className="text-sm text-[#212130] mb-0.5">{v.note}</p>
+                  <p className="text-sm text-[#0a1024] mb-0.5">{v.note}</p>
                   <p className="text-xs text-[#9ca3af]">{v.date}</p>
                 </div>
               </div>

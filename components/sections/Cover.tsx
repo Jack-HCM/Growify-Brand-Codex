@@ -2,27 +2,33 @@ import { brand } from "@/config/brand";
 
 export default function Cover() {
   return (
-    <section id="cover" className="section-anchor min-h-screen flex flex-col justify-between relative overflow-hidden" style={{ backgroundColor: "#212130" }}>
-      {/* Background geometric elements */}
+    <section id="cover" className="section-anchor min-h-screen flex flex-col justify-between relative overflow-hidden"
+      style={{ background: "radial-gradient(ellipse at 22% 78%, #0E254B 0%, #07111E 55%, #020810 100%)" }}>
+      {/* Background elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute" style={{ top: -160, right: -160, width: 480, height: 480, borderRadius: "50%", border: "1px solid rgba(114,204,118,0.15)" }} />
-        <div className="absolute" style={{ top: -80, right: -80, width: 320, height: 320, borderRadius: "50%", backgroundColor: "rgba(114,204,118,0.06)" }} />
-        <div className="absolute" style={{ bottom: -120, left: -120, width: 360, height: 360, borderRadius: "50%", border: "1px solid rgba(114,204,118,0.1)" }} />
-        <div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle at 1px 1px, rgba(255,255,255,0.04) 1px, transparent 0)", backgroundSize: "32px 32px" }} />
+        {/* Subtle dot grid */}
+        <div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle at 1px 1px, rgba(255,255,255,0.03) 1px, transparent 0)", backgroundSize: "32px 32px" }} />
+        {/* Sparkle top-right */}
+        <svg className="absolute" style={{ top: 48, right: 64, opacity: 0.18 }} width="72" height="72" viewBox="0 0 72 72" fill="none">
+          <path d="M36 4 L38 30 L64 32 L38 34 L36 60 L34 34 L8 32 L34 30 Z" fill="white"/>
+        </svg>
+        <svg className="absolute" style={{ top: 72, right: 112, opacity: 0.10 }} width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <path d="M18 2 L19 15 L32 16 L19 17 L18 30 L17 17 L4 16 L17 15 Z" fill="white"/>
+        </svg>
       </div>
 
       {/* Top bar */}
       <div className="relative flex items-center justify-between px-8 pt-10 lg:pl-[calc(14rem+2rem)]">
         <div className="flex items-center gap-3">
-          <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: "#72cc76" }} />
-          <span className="text-[11px] tracking-[0.2em] uppercase" style={{ color: "rgba(114,204,118,0.8)" }}>Brand Codex · v{brand.version}</span>
+          <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: "#1271ff" }} />
+          <span className="text-[11px] tracking-[0.2em] uppercase" style={{ color: "rgba(18,113,255,0.8)" }}>Brand Codex · v{brand.version}</span>
         </div>
         <span className="text-[11px]" style={{ color: "#a1a9b7" }}>{brand.year}</span>
       </div>
 
       {/* Centre */}
       <div className="relative flex-1 flex flex-col justify-center px-8 lg:pl-[calc(14rem+2rem)] pb-10">
-        <p className="text-[11px] tracking-[0.3em] uppercase mb-8" style={{ color: "#72cc76" }}>{brand.url}</p>
+        <p className="text-[11px] tracking-[0.3em] uppercase mb-8" style={{ color: "rgba(18,113,255,0.9)" }}>{brand.url}</p>
         <div className="mb-10">
           <img
             src="/logos/Growify-White-Landscape.svg"

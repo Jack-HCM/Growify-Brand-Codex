@@ -10,14 +10,14 @@
 
   --color-bg:          #f9f9fa;
   --color-surface:     #ffffff;
-  --color-sidebar:     #212130;
-  --color-accent:      #72cc76;
-  --color-accent-light:#d4f0d5;
-  --color-dark:        #212130;
-  --color-text:        #212130;
+  --color-sidebar:     #0a1024;
+  --color-accent:      #1271ff;
+  --color-accent-light:#eaf2ff;
+  --color-dark:        #0a1024;
+  --color-text:        #0a1024;
   --color-text-muted:  #6b7280;
   --color-border:      #e5e7eb;
-  --color-border-accent: #72cc76;
+  --color-border-accent: #1271ff;
 }
 
 /* ─── Base ──────────────────────────────────────────────────────────────────── */
@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
 ::-webkit-scrollbar { width: 4px; height: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 2px; }
-::-webkit-scrollbar-thumb:hover { background: #72cc76; }
+::-webkit-scrollbar-thumb:hover { background: #1271ff; }
 
 /* ─── Utilities ─────────────────────────────────────────────────────────────── */
 .section-anchor { scroll-margin-top: 40px; }

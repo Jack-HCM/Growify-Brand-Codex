@@ -10,25 +10,25 @@ export const brand = {
   // ─── Colours ───────────────────────────────────────────────────────────────
   colours: {
     primary: {
-      label: "Growth Green",
-      hex: "#72CC76",
-      rgb: "114, 204, 118",
+      label: "Electric Blue",
+      hex: "#1271FF",
+      rgb: "18, 113, 255",
       usage: "Primary brand accent. CTAs, highlights, active states, and the brand mark.",
     },
     dark: {
-      label: "Deep Charcoal",
-      hex: "#212130",
-      usage: "Primary dark surface. Headers, dark sections, and high-contrast text.",
+      label: "Off Black",
+      hex: "#0A1024",
+      usage: "Primary dark surface. Sidebar, headers, dark sections, and high-contrast backgrounds.",
     },
     darkHighlight: {
-      label: "Navy",
-      hex: "#1A2335",
-      usage: "Secondary dark surface. Used for hover states and layered dark UI.",
+      label: "Dark Navy",
+      hex: "#14284B",
+      usage: "Secondary dark surface. Used for layered dark UI and hover states.",
     },
     blue: {
-      label: "Digital Blue",
-      hex: "#1271FF",
-      usage: "Digital-only UI accent. Links, interactive states, and digital collateral.",
+      label: "Blue Light",
+      hex: "#5499FF",
+      usage: "Secondary blue accent. Tints, secondary CTAs, and UI depth.",
     },
     background: {
       label: "Off-White",
@@ -41,11 +41,11 @@ export const brand = {
       usage: "Card and content surface. Elevated UI elements.",
     },
     palette: [
-      { label: "Deep Charcoal",   hex: "#212130", usage: "Primary dark / brand background" },
-      { label: "Navy",            hex: "#1A2335", usage: "Secondary dark / hover" },
-      { label: "Growth Green",    hex: "#72CC76", usage: "Primary accent / brand mark" },
-      { label: "Digital Blue",    hex: "#1271FF", usage: "Digital UI accent" },
-      { label: "Blue Light",      hex: "#5499FF", usage: "Blue tint / secondary digital" },
+      { label: "Off Black",       hex: "#0A1024", usage: "Primary dark / brand background" },
+      { label: "Dark Navy",       hex: "#14284B", usage: "Secondary dark / layered surfaces" },
+      { label: "Electric Blue",   hex: "#1271FF", usage: "Primary accent / brand mark / CTAs" },
+      { label: "Blue Light",      hex: "#5499FF", usage: "Secondary accent / tints" },
+      { label: "Blue Pale",       hex: "#7FB2FF", usage: "Subtle tint / hover states" },
       { label: "Mid Grey",        hex: "#A1A9B7", usage: "Muted text / secondary" },
       { label: "Border Grey",     hex: "#D0D4DB", usage: "Borders / dividers" },
       { label: "Light Grey",      hex: "#F0F1F3", usage: "Subtle section backgrounds" },
@@ -106,7 +106,7 @@ export const brand = {
     minSize: "24px height for digital. 10mm height for print.",
     doList: [
       "Use the black version on white and light backgrounds",
-      "Use the white version on dark (#212130) backgrounds",
+      "Use the white version on dark (#0A1024) backgrounds",
       "Use the full-colour version sparingly for brand moments",
       "Maintain clear space at all times",
     ],

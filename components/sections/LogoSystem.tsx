@@ -30,7 +30,7 @@ function LogoVariant({ bg, src, label, maxW, border }: { bg: string; src: string
       </div>
       <div className="flex items-center justify-between mt-1">
         <p className="text-xs text-[#9ca3af]">{label}</p>
-        <a href={src} download className="text-[10px] text-[#72cc76] hover:underline">↓ SVG</a>
+        <a href={src} download className="text-[10px] text-[#1271ff] hover:underline">↓ SVG</a>
       </div>
     </div>
   );
@@ -43,17 +43,17 @@ export default function LogoSystem() {
 
       <div className="grid sm:grid-cols-2 gap-6 mb-6">
         <LogoVariant bg="#f9f9fa" src={brand.logo.landscape.black} label="Landscape — light background" maxW={W.landscape} border />
-        <LogoVariant bg="#212130" src={brand.logo.landscape.white} label="Landscape — dark background"  maxW={W.landscape} />
+        <LogoVariant bg="#0a1024" src={brand.logo.landscape.white} label="Landscape — dark background"  maxW={W.landscape} />
       </div>
 
       <div className="grid sm:grid-cols-2 gap-6 mb-6">
         <LogoVariant bg="#f9f9fa" src={brand.logo.stacked.black}   label="Stacked — light background"  maxW={W.stacked}  border />
-        <LogoVariant bg="#212130" src={brand.logo.stacked.white}   label="Stacked — dark background"   maxW={W.stacked} />
+        <LogoVariant bg="#0a1024" src={brand.logo.stacked.white}   label="Stacked — dark background"   maxW={W.stacked} />
       </div>
 
       <div className="grid sm:grid-cols-2 gap-6 mb-16">
         <LogoVariant bg="#f9f9fa" src={brand.logo.motif.black}     label="Motif only — light background" maxW={W.motif} border />
-        <LogoVariant bg="#212130" src={brand.logo.motif.white}     label="Motif only — dark background"  maxW={W.motif} />
+        <LogoVariant bg="#0a1024" src={brand.logo.motif.white}     label="Motif only — dark background"  maxW={W.motif} />
       </div>
 
       {/* Clear space + Min size */}
@@ -61,10 +61,10 @@ export default function LogoSystem() {
         <div className="card p-8">
           <h3 className="text-[10px] tracking-[0.2em] uppercase text-[#9ca3af] mb-6">Clear Space</h3>
           <div className="flex items-center justify-center py-6 mb-4">
-            <div className="relative border border-dashed border-[#72cc76]/40 p-8">
+            <div className="relative border border-dashed border-[#1271ff]/40 p-8">
               <Logo src={brand.logo.landscape.black} maxW={120} />
               {["top","bottom","left","right"].map((pos) => (
-                <span key={pos} className={`absolute text-[9px] text-[#72cc76]/60 ${
+                <span key={pos} className={`absolute text-[9px] text-[#1271ff]/60 ${
                   pos==="top"?"top-0 left-1/2 -translate-x-1/2 -translate-y-1/2":
                   pos==="bottom"?"bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2":
                   pos==="left"?"left-0 top-1/2 -translate-x-1/2 -translate-y-1/2":
@@ -95,11 +95,11 @@ export default function LogoSystem() {
       <div className="grid lg:grid-cols-2 gap-8">
         <div>
           <h3 className="text-[10px] tracking-[0.2em] uppercase text-[#9ca3af] mb-6 flex items-center gap-3">
-            <span className="w-4 h-4 rounded-full border border-[#72cc76] flex items-center justify-center text-[#72cc76] text-[8px]">✓</span> Do
+            <span className="w-4 h-4 rounded-full border border-[#1271ff] flex items-center justify-center text-[#1271ff] text-[8px]">✓</span> Do
           </h3>
           <ul className="space-y-3">{brand.logo.doList.map((d) => (
             <li key={d} className="flex items-start gap-3 text-sm text-[#6b7280]">
-              <span className="text-[#72cc76] text-xs mt-0.5">—</span>{d}
+              <span className="text-[#1271ff] text-xs mt-0.5">—</span>{d}
             </li>
           ))}</ul>
         </div>

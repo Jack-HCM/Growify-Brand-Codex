@@ -30,16 +30,16 @@ export default function ColourPalette() {
 
   return (
     <SectionWrapper id="colours" label="03 — Colour Palette" title="Colour palette."
-      description="A focused palette built on deep charcoal, Growth Green, and clean off-white — with digital blues and muted greys for hierarchy and depth.">
+      description="A focused palette built on Electric Blue, off-black, and clean off-white — with blue tints and muted greys for hierarchy and depth.">
 
       {/* Hero swatches */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-16">
         {[primary, dark, darkHighlight, background].map((c) => (
           <div key={c.hex}>
             <div className="rounded-xl h-32 mb-3 flex items-end p-4" style={{ backgroundColor: c.hex, border: isLight(c.hex) ? "1px solid #e5e7eb" : "none" }}>
-              <CopyHex hex={c.hex} className="text-lg" style={{ color: isLight(c.hex) ? "#212130" : "#ffffff" }} />
+              <CopyHex hex={c.hex} className="text-lg" style={{ color: isLight(c.hex) ? "#0a1024" : "#ffffff" }} />
             </div>
-            <p className="font-heading text-sm font-medium text-[#212130] mb-0.5">{c.label}</p>
+            <p className="font-heading text-sm font-medium text-[#0a1024] mb-0.5">{c.label}</p>
             <p className="text-xs text-[#9ca3af] leading-relaxed">{c.usage}</p>
           </div>
         ))}
@@ -63,15 +63,15 @@ export default function ColourPalette() {
         {[
           { label: "Page backgrounds",  hex: "#F9F9FA", note: "Primary page background" },
           { label: "Card surfaces",     hex: "#FFFFFF", note: "All elevated content areas" },
-          { label: "Primary accent",    hex: "#72CC76", note: "CTAs, icons, active states, brand mark" },
-          { label: "Dark surfaces",     hex: "#212130", note: "Headers, dark sections, sidebar" },
-          { label: "Body text",         hex: "#212130", note: "All primary text" },
+          { label: "Primary accent",    hex: "#1271FF", note: "CTAs, icons, active states, brand mark" },
+          { label: "Dark surfaces",     hex: "#0a1024", note: "Headers, dark sections, sidebar" },
+          { label: "Body text",         hex: "#0a1024", note: "All primary text" },
           { label: "Muted text",        hex: "#6B7280", note: "Captions, labels, secondary info" },
         ].map((u) => (
           <div key={u.label} className="card p-4 flex items-center gap-4">
             <div className="w-10 h-10 rounded-md shrink-0 border border-[#e5e7eb]" style={{ backgroundColor: u.hex }} />
             <div>
-              <p className="text-sm font-medium text-[#212130] mb-0.5">{u.label}</p>
+              <p className="text-sm font-medium text-[#0a1024] mb-0.5">{u.label}</p>
               <CopyHex hex={u.hex} className="text-[11px] text-[#9ca3af]" />
             </div>
           </div>
@@ -83,20 +83,20 @@ export default function ColourPalette() {
         <h3 className="text-[10px] tracking-[0.2em] uppercase text-[#9ca3af] mb-6">Styling Notes</h3>
         <div className="grid sm:grid-cols-3 gap-6">
           <div>
-            <p className="text-xs font-medium text-[#212130] mb-2">Card borders</p>
-            <div className="h-16 rounded-lg flex items-center justify-center border border-[#72cc76]">
-              <span className="text-[10px] text-[#9ca3af]">1px solid #72CC76</span>
+            <p className="text-xs font-medium text-[#0a1024] mb-2">Card borders</p>
+            <div className="h-16 rounded-lg flex items-center justify-center border border-[#1271ff]">
+              <span className="text-[10px] text-[#9ca3af]">1px solid #1271FF</span>
             </div>
           </div>
           <div>
-            <p className="text-xs font-medium text-[#212130] mb-2">Accent top border</p>
-            <div className="h-16 rounded-lg flex items-center justify-center border border-[#e5e7eb] border-t-2 border-t-[#72cc76]">
-              <span className="text-[10px] text-[#9ca3af]">2px solid #72CC76</span>
+            <p className="text-xs font-medium text-[#0a1024] mb-2">Accent top border</p>
+            <div className="h-16 rounded-lg flex items-center justify-center border border-[#e5e7eb] border-t-2 border-t-[#1271ff]">
+              <span className="text-[10px] text-[#9ca3af]">2px solid #1271FF</span>
             </div>
           </div>
           <div>
-            <p className="text-xs font-medium text-[#212130] mb-2">Glass / overlay</p>
-            <div className="h-16 rounded-lg flex items-center justify-center bg-white/40 border border-[#72cc76]/30 backdrop-blur-sm">
+            <p className="text-xs font-medium text-[#0a1024] mb-2">Glass / overlay</p>
+            <div className="h-16 rounded-lg flex items-center justify-center bg-white/40 border border-[#1271ff]/30 backdrop-blur-sm">
               <span className="text-[10px] text-[#9ca3af]">white 40% opacity</span>
             </div>
           </div>
