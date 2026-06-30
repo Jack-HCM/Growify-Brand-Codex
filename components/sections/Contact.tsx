@@ -56,14 +56,14 @@ export default function Contact() {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <span className="text-[#1271ff] text-xs">@</span>
-                <a href="mailto:hello@hivecreative.media" className="text-sm text-[#6b7280] hover:text-[#0a1024] transition-colors">
-                  hello@hivecreative.media
+                <a href="mailto:hello@hivecreativemedia.co.uk" className="text-sm text-[#6b7280] hover:text-[#0a1024] transition-colors">
+                  hello@hivecreativemedia.co.uk
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <span className="text-[#1271ff] text-xs">↗</span>
-                <a href="https://hivecreative.media" target="_blank" rel="noopener noreferrer" className="text-sm text-[#6b7280] hover:text-[#0a1024] transition-colors">
-                  hivecreative.media
+                <a href="https://hivecreativemedia.co.uk" target="_blank" rel="noopener noreferrer" className="text-sm text-[#6b7280] hover:text-[#0a1024] transition-colors">
+                  hivecreativemedia.co.uk
                 </a>
               </div>
             </div>
