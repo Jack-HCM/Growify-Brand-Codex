@@ -31,7 +31,7 @@ export default function BrandApplications() {
                 <img src={brand.logo.landscape.white} alt="Growify" style={{ width: 100, height: "auto", display: "block" }} />
                 <div className="hidden sm:flex items-center gap-6 text-xs text-[#9ca3af]">
                   <span>Services</span><span>Case studies</span><span>About</span>
-                  <button className="px-4 py-2 rounded-lg bg-[#1271ff] text-white text-xs font-medium">Book a call</button>
+                  <button className="px-4 py-2 corner-cut bg-[#1271ff] text-white text-xs font-medium">Book a call</button>
                 </div>
               </nav>
               <div className="max-w-xl">
@@ -45,8 +45,8 @@ export default function BrandApplications() {
                   We design, build, and operate the marketing systems behind ambitious brands — brand strategy, SEO, AEO, paid media, and the custom agents in between.
                 </p>
                 <div className="flex gap-3">
-                  <button className="px-5 py-2.5 rounded-lg bg-[#1271ff] text-white text-sm font-medium">Get started →</button>
-                  <button className="px-5 py-2.5 rounded-lg border border-white/20 text-white text-sm">See our work</button>
+                  <button className="px-5 py-2.5 corner-cut bg-[#1271ff] text-white text-sm font-medium">Get started →</button>
+                  <button className="px-5 py-2.5 corner-cut border border-white/20 text-white text-sm">See our work</button>
                 </div>
               </div>
             </div>
@@ -60,7 +60,7 @@ export default function BrandApplications() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
 
           {/* 1 — Quote card (dark bg) */}
-          <div className="aspect-square rounded-xl overflow-hidden relative flex flex-col justify-between p-5" style={{ backgroundColor: "#0a1024" }}>
+          <div className="aspect-square corner-cut overflow-hidden relative flex flex-col justify-between p-5" style={{ backgroundColor: "#0a1024" }}>
             <img src={brand.logo.landscape.white} alt="Growify" style={{ width: 60, height: "auto", display: "block" }} />
             <div>
               <p className="font-heading text-[10px] font-medium leading-snug text-white mb-3">
@@ -82,7 +82,7 @@ export default function BrandApplications() {
           </div>
 
           {/* 2 — Stat card (dark bg) */}
-          <div className="aspect-square rounded-xl overflow-hidden relative flex flex-col justify-between p-5" style={{ backgroundColor: "#14284b" }}>
+          <div className="aspect-square corner-cut overflow-hidden relative flex flex-col justify-between p-5" style={{ backgroundColor: "#14284b" }}>
             <img src={brand.logo.motif.white} alt="Growify" style={{ width: 28, height: "auto", display: "block" }} />
             <div>
               <p className="font-heading text-4xl font-medium text-white leading-none mb-1">2×</p>
@@ -92,7 +92,7 @@ export default function BrandApplications() {
           </div>
 
           {/* 3 — Brand statement (blue bg) */}
-          <div className="aspect-square rounded-xl overflow-hidden relative flex flex-col justify-between p-5" style={{ backgroundColor: "#1271ff" }}>
+          <div className="aspect-square corner-cut overflow-hidden relative flex flex-col justify-between p-5" style={{ backgroundColor: "#1271ff" }}>
             <img src={brand.logo.landscape.white} alt="Growify" style={{ width: 60, height: "auto", display: "block" }} />
             <div>
               <p className="font-heading text-sm font-medium text-white leading-tight mb-2">
@@ -106,7 +106,7 @@ export default function BrandApplications() {
           </div>
 
           {/* 4 — Feature / light */}
-          <div className="aspect-square rounded-xl flex flex-col justify-between p-5 border border-[#e5e7eb]" style={{ backgroundColor: "#f9f9fa" }}>
+          <div className="aspect-square corner-cut flex flex-col justify-between p-5 border border-[#e5e7eb]" style={{ backgroundColor: "#f9f9fa" }}>
             <img src={brand.logo.landscape.black} alt="Growify" style={{ width: 60, height: "auto", display: "block" }} />
             <div>
               <span className="inline-block px-2 py-0.5 rounded-full border border-[#1271ff]/40 bg-[#1271ff]/10 text-[#0a1024] text-[6px] mb-2">

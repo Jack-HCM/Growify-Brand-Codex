@@ -23,7 +23,7 @@ function LogoVariant({ bg, src, label, maxW, border }: { bg: string; src: string
   return (
     <div>
       <div
-        className={`rounded-xl flex items-center justify-center p-10 mb-3 aspect-video ${border ? "border border-[#e5e7eb]" : ""}`}
+        className={`corner-cut flex items-center justify-center p-10 mb-3 aspect-video ${border ? "border border-[#e5e7eb]" : ""}`}
         style={{ backgroundColor: bg }}
       >
         <Logo src={src} maxW={maxW} />

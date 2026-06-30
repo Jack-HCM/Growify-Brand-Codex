@@ -6,7 +6,7 @@ export default function Typography() {
 
   return (
     <SectionWrapper id="typography" label="04 — Typography" title="Typography."
-      description="Two typefaces. Plus Jakarta Sans for presence and authority. Inter for clarity and readability.">
+      description="Two typefaces. Funnel Display for presence and authority. Google Sans for clarity and readability.">
 
       {/* Typeface cards */}
       <div className="grid lg:grid-cols-2 gap-6 mb-20">
@@ -49,7 +49,7 @@ export default function Typography() {
               </div>
               <p className="text-[#0a1024] flex-1 overflow-hidden whitespace-nowrap text-ellipsis"
                 style={{
-                  fontFamily: item.family.includes("Plus Jakarta") ? "var(--font-heading)" : "var(--font-body)",
+                  fontFamily: item.family.includes("Funnel") ? "var(--font-heading)" : "var(--font-body)",
                   fontSize: `clamp(14px, ${parseInt(item.size) * 0.5}px, ${item.size})`,
                   fontWeight: item.weight,
                   lineHeight: item.lineHeight,

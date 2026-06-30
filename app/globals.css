@@ -1,12 +1,12 @@
 /* ─── Fonts — must precede @import "tailwindcss" ────────────────────────────── */
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400;500;600;700;800&family=Google+Sans:wght@400;500;700&display=swap");
 
 @import "tailwindcss";
 
 /* ─── CSS Custom Properties ─────────────────────────────────────────────────── */
 :root {
-  --font-heading: "Plus Jakarta Sans", system-ui, sans-serif;
-  --font-body: "Inter", system-ui, sans-serif;
+  --font-heading: "Funnel Display", system-ui, sans-serif;
+  --font-body: "Google Sans", system-ui, sans-serif;
 
   --color-bg:          #f9f9fa;
   --color-surface:     #ffffff;
@@ -43,15 +43,18 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
 /* ─── Utilities ─────────────────────────────────────────────────────────────── */
 .section-anchor { scroll-margin-top: 40px; }
 
+/* Corner-cut: all corners rounded except top-right (Growify signature shape) */
+.corner-cut { border-radius: 12px 0 12px 12px; }
+
 .card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: 12px;
+  border-radius: 12px 0 12px 12px;
 }
 
 .card-accent {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-top: 2px solid var(--color-border-accent);
-  border-radius: 12px;
+  border-radius: 12px 0 12px 12px;
 }

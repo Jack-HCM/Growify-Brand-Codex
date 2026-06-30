@@ -13,17 +13,17 @@ export default function UIComponents() {
             <div>
               <p className="text-[10px] uppercase tracking-widest text-[#9ca3af] mb-5">Primary</p>
               <div className="space-y-3">
-                <button className="w-full px-5 py-2.5 rounded-lg bg-[#0a1024] text-white text-sm font-medium hover:bg-[#14284b] transition-colors">Get started →</button>
-                <button className="w-full px-5 py-2.5 rounded-lg bg-[#0a1024] text-white text-sm font-medium opacity-40 cursor-not-allowed">Disabled</button>
-                <button className="w-full px-5 py-2.5 rounded-lg bg-[#0a1024] text-white text-sm font-medium flex items-center justify-center gap-2">Book a call <span className="text-xs">→</span></button>
+                <button className="w-full px-5 py-2.5 corner-cut bg-[#0a1024] text-white text-sm font-medium hover:bg-[#14284b] transition-colors">Get started →</button>
+                <button className="w-full px-5 py-2.5 corner-cut bg-[#0a1024] text-white text-sm font-medium opacity-40 cursor-not-allowed">Disabled</button>
+                <button className="w-full px-5 py-2.5 corner-cut bg-[#0a1024] text-white text-sm font-medium flex items-center justify-center gap-2">Book a call <span className="text-xs">→</span></button>
               </div>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-widest text-[#9ca3af] mb-5">Secondary</p>
               <div className="space-y-3">
-                <button className="w-full px-5 py-2.5 rounded-lg border border-[#0a1024] text-[#0a1024] text-sm font-medium hover:bg-[#f9f9fa] transition-colors">Learn more</button>
-                <button className="w-full px-5 py-2.5 rounded-lg border border-[#d1d5db] text-[#9ca3af] text-sm cursor-not-allowed">Disabled</button>
-                <button className="w-full px-5 py-2.5 rounded-lg border border-[#1271ff] text-[#0a1024] text-sm font-medium flex items-center justify-center gap-2">Accent border <span className="text-xs">→</span></button>
+                <button className="w-full px-5 py-2.5 corner-cut border border-[#0a1024] text-[#0a1024] text-sm font-medium hover:bg-[#f9f9fa] transition-colors">Learn more</button>
+                <button className="w-full px-5 py-2.5 corner-cut border border-[#d1d5db] text-[#9ca3af] text-sm cursor-not-allowed">Disabled</button>
+                <button className="w-full px-5 py-2.5 corner-cut border border-[#1271ff] text-[#0a1024] text-sm font-medium flex items-center justify-center gap-2">Accent border <span className="text-xs">→</span></button>
               </div>
             </div>
             <div>
@@ -34,12 +34,12 @@ export default function UIComponents() {
                 <button className="text-sm text-[#9ca3af] underline underline-offset-4 cursor-not-allowed">Disabled link</button>
               </div>
             </div>
-            <div className="bg-[#0a1024] rounded-lg p-4">
+            <div className="bg-[#0a1024] corner-cut p-4">
               <p className="text-[10px] uppercase tracking-widest text-[#6b7280] mb-5">On dark</p>
               <div className="space-y-3">
-                <button className="w-full px-5 py-2.5 rounded-lg bg-white text-[#0a1024] text-sm font-medium">Get started →</button>
-                <button className="w-full px-5 py-2.5 rounded-lg border border-white/20 text-white text-sm">Learn more</button>
-                <button className="w-full px-5 py-2.5 rounded-lg bg-[#1271ff] text-white text-sm font-medium">Accent CTA</button>
+                <button className="w-full px-5 py-2.5 corner-cut bg-white text-[#0a1024] text-sm font-medium">Get started →</button>
+                <button className="w-full px-5 py-2.5 corner-cut border border-white/20 text-white text-sm">Learn more</button>
+                <button className="w-full px-5 py-2.5 corner-cut bg-[#1271ff] text-white text-sm font-medium">Accent CTA</button>
               </div>
             </div>
           </div>
@@ -66,21 +66,21 @@ export default function UIComponents() {
         <h3 className="text-[10px] tracking-[0.2em] uppercase text-[#9ca3af] mb-6">Cards</h3>
         <div className="grid sm:grid-cols-3 gap-5">
           <div className="card p-6">
-            <div className="w-8 h-8 rounded-lg bg-[#eaf2ff] flex items-center justify-center mb-4">
+            <div className="w-8 h-8 corner-cut bg-[#eaf2ff] flex items-center justify-center mb-4">
               <div className="w-3 h-3 rounded-full bg-[#1271ff]" />
             </div>
             <p className="font-heading text-sm font-medium text-[#0a1024] mb-2">Daily SEO &amp; AEO</p>
             <p className="text-xs text-[#9ca3af] leading-relaxed">Systematic content production and answer-engine optimisation that compounds over time.</p>
           </div>
           <div className="card-accent p-6">
-            <div className="w-8 h-8 rounded-lg bg-[#eaf2ff] flex items-center justify-center mb-4">
+            <div className="w-8 h-8 corner-cut bg-[#eaf2ff] flex items-center justify-center mb-4">
               <div className="w-3 h-3 rounded-full bg-[#1271ff]" />
             </div>
             <p className="font-heading text-sm font-medium text-[#0a1024] mb-2">With accent border</p>
             <p className="text-xs text-[#9ca3af] leading-relaxed">Two-pixel top border in Electric Blue. Used for featured or highlighted content.</p>
           </div>
-          <div className="bg-[#0a1024] rounded-xl p-6">
-            <div className="w-8 h-8 rounded-lg bg-[#14284b] flex items-center justify-center mb-4">
+          <div className="bg-[#0a1024] corner-cut p-6">
+            <div className="w-8 h-8 corner-cut bg-[#14284b] flex items-center justify-center mb-4">
               <div className="w-3 h-3 rounded-full bg-[#1271ff]" />
             </div>
             <p className="font-heading text-sm font-medium text-white mb-2">Dark card</p>

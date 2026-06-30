@@ -17,7 +17,7 @@ export default function Contact() {
           <div className="card p-8">
             <p className="text-[10px] tracking-[0.2em] uppercase text-[#9ca3af] mb-6">Brand Owner</p>
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-[#eaf2ff] flex items-center justify-center">
+              <div className="w-10 h-10 corner-cut bg-[#eaf2ff] flex items-center justify-center">
                 <div className="w-4 h-4 rounded-full bg-[#1271ff]" />
               </div>
               <div>
@@ -45,7 +45,7 @@ export default function Contact() {
           <div className="card p-8">
             <p className="text-[10px] tracking-[0.2em] uppercase text-[#9ca3af] mb-6">Creative Team</p>
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-[#f9f9fa] border border-[#e5e7eb] flex items-center justify-center">
+              <div className="w-10 h-10 corner-cut bg-[#f9f9fa] border border-[#e5e7eb] flex items-center justify-center">
                 <span className="text-[10px] font-bold text-[#0a1024]">HC</span>
               </div>
               <div>
@@ -70,14 +70,14 @@ export default function Contact() {
           </div>
 
           {/* Asset download */}
-          <div className="rounded-xl border border-dashed border-[#1271ff]/40 p-8 text-center">
+          <div className="corner-cut border border-dashed border-[#1271ff]/40 p-8 text-center">
             <div className="w-10 h-10 rounded-full bg-[#eaf2ff] flex items-center justify-center mx-auto mb-4">
               <span className="text-[#1271ff] text-sm">↓</span>
             </div>
             <p className="font-heading text-sm font-medium text-[#0a1024] mb-2">Brand Asset Pack</p>
             <p className="text-xs text-[#9ca3af] mb-4">Logos, colours, and fonts — all approved files</p>
             <a href={`mailto:${brand.email}?subject=Brand Asset Request`}
-              className="inline-block px-5 py-2.5 rounded-lg border border-[#1271ff] text-[#0a1024] text-xs hover:bg-[#1271ff]/10 transition-colors">
+              className="inline-block px-5 py-2.5 corner-cut border border-[#1271ff] text-[#0a1024] text-xs hover:bg-[#1271ff]/10 transition-colors">
               Request assets →
             </a>
           </div>
