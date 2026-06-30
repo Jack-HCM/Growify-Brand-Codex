@@ -12,7 +12,7 @@ export default function SectionWrapper({ id, label, title, description, children
   return (
     <section
       id={id}
-      className={`section-anchor min-h-screen border-b px-8 py-20 lg:py-24 lg:pl-[calc(14rem+2rem)] ${
+      className={`section-anchor min-h-screen border-b px-8 py-20 lg:py-24 ${
         dark ? "border-white/10" : "border-[#e5e7eb]"
       } ${className}`}
       style={dark
